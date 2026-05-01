@@ -142,9 +142,9 @@ input:focus, textarea:focus { outline: 2px solid rgba(47,143,70,.28); border-col
 
 .responsavel {
   display: grid;
-  grid-template-columns: minmax(220px, 320px) 1fr;
+  grid-template-columns: 1.35fr minmax(220px, 320px);
   gap: 2rem;
-  align-items: center;
+  align-items: start;
 }
 
 .responsavel__photo-wrap {
@@ -166,6 +166,24 @@ input:focus, textarea:focus { outline: 2px solid rgba(47,143,70,.28); border-col
   color: #33475e;
 }
 
+.responsavel__cards {
+  margin: 1.2rem 0 1.4rem;
+}
+
+.card--small {
+  padding: 0.95rem;
+}
+
+.card--small h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.35rem;
+}
+
+.card--small p {
+  margin: 0;
+  font-size: 0.93rem;
+}
+
 @media (max-width: 880px) {
   .responsavel {
     grid-template-columns: 1fr;
@@ -175,5 +193,6 @@ input:focus, textarea:focus { outline: 2px solid rgba(47,143,70,.28); border-col
 
   .responsavel__photo-wrap {
     max-width: 280px;
+    margin: 0 auto;
   }
 }
