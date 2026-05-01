@@ -26,7 +26,13 @@
             <p class="brand__tag">Segurança do Trabalho & Engenharia</p>
           </div>
         </div>
-        <a class="btn btn--outline" href="#contato">Fale conosco</a>
+        <a
+          class="btn btn--outline"
+          href="https://wa.me/5543996015086?text=Ol%C3%A1%2C%20vim%20pela%20landing%20page%20da%20Expert%20Agro%2FSST%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20treinamentos%20NR%20e%20seguran%C3%A7a%20do%20trabalho."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Fale conosco</a
+        >
       </div>
     </header>
 
@@ -44,7 +50,7 @@
             <div class="hero__cta">
               <a
                 class="btn btn--primary"
-                href="https://wa.me/5543996015086?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20de%20treinamentos%20da%20Expert%20Agro%2FSST."
+                href="https://wa.me/5543996015086?text=Ol%C3%A1%2C%20vim%20pela%20landing%20page%20da%20Expert%20Agro%2FSST%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20treinamentos%20NR%20e%20seguran%C3%A7a%20do%20trabalho."
                 target="_blank"
                 rel="noopener noreferrer"
                 >Solicitar orçamento pelo WhatsApp</a
@@ -143,7 +149,7 @@
       <section class="section" id="contato">
         <div class="container">
           <h2>Solicite seu atendimento</h2>
-          <form class="contact-form" action="mailto:ademilson_melo@yahoo.com" method="post" enctype="text/plain">
+          <form class="contact-form" id="contact-form">
             <label>
               Nome
               <input type="text" name="nome" required />
@@ -173,5 +179,28 @@
         <p>E-mail: <a href="mailto:ademilson_melo@yahoo.com">ademilson_melo@yahoo.com</a></p>
       </div>
     </footer>
+
+    <script>
+      const whatsappNumber = "5543996015086";
+      const baseMessage =
+        "Olá, vim pela landing page da Expert Agro/SST e gostaria de solicitar informações sobre treinamentos NR e segurança do trabalho.";
+
+      const contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const nome = formData.get("nome");
+        const telefone = formData.get("telefone");
+        const email = formData.get("email");
+        const mensagem = formData.get("mensagem");
+
+        const fullMessage = `${baseMessage}\n\nNome: ${nome}\nTelefone: ${telefone}\nE-mail: ${email}\nMensagem: ${mensagem}`;
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
+
+        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      });
+    </script>
   </body>
 </html>
