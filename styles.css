@@ -134,3 +134,46 @@ input:focus, textarea:focus { outline: 2px solid rgba(47,143,70,.28); border-col
 @media (max-width: 880px) {
   .hero__grid { grid-template-columns: 1fr; }
 }
+
+
+.section--responsavel {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.responsavel {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.responsavel__photo-wrap {
+  width: 100%;
+  max-width: 320px;
+}
+
+.responsavel__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid #d7e3f0;
+  box-shadow: 0 16px 30px rgba(11, 34, 64, 0.16);
+  display: block;
+}
+
+.responsavel__content p {
+  color: #33475e;
+}
+
+@media (max-width: 880px) {
+  .responsavel {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: left;
+  }
+
+  .responsavel__photo-wrap {
+    max-width: 280px;
+  }
+}
