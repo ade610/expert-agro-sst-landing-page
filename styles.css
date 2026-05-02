@@ -263,16 +263,16 @@ input:focus, textarea:focus { outline: 2px solid rgba(47,143,70,.28); border-col
   }
 }
 
-#depoimentos .card {
+#beneficios .card {
   border-left: 4px solid rgba(15, 47, 87, 0.24);
   padding: 1.2rem;
 }
 
-#depoimentos .card h3 {
+#beneficios .card h3 {
   margin-bottom: 0.5rem;
 }
 
-#depoimentos .card p {
+#beneficios .card p {
   margin: 0;
   color: #33475e;
 }
