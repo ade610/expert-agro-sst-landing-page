@@ -42,14 +42,15 @@ h2 { font-size: clamp(1.5rem, 2.4vw, 2.2rem); margin-bottom: 0.8rem; color: var(
 
 @media (max-width: 768px) {
   .nav {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .brand {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+    width: auto;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .brand-logo {
@@ -58,8 +59,8 @@ h2 { font-size: clamp(1.5rem, 2.4vw, 2.2rem); margin-bottom: 0.8rem; color: var(
   }
 
   .nav .btn--outline {
-    width: 100%;
-    max-width: 320px;
+    width: auto;
+    max-width: none;
   }
 }
 
