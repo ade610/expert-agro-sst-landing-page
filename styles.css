@@ -125,6 +125,7 @@ h2 { font-size: clamp(1.5rem, 2.3vw, 2.1rem); margin-top: 0; color: var(--blue-d
 
 .responsavel-photo {
   margin: 0;
+  justify-self: center;
   background: #fff;
   border-radius: 22px;
   padding: 0.6rem;
@@ -132,7 +133,7 @@ h2 { font-size: clamp(1.5rem, 2.3vw, 2.1rem); margin-top: 0; color: var(--blue-d
 }
 
 .responsavel-photo img {
-  width: 100%;
+  width: min(100%, 520px);
   display: block;
   border-radius: 16px;
   object-fit: cover;
