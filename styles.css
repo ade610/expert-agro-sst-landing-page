@@ -80,7 +80,7 @@ body {
 h1 { font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.2; }
 h2 { font-size: clamp(1.5rem, 2.3vw, 2.1rem); margin-top: 0; color: var(--blue-dark); }
 
-.sales-section { padding: 3.7rem 0; background: var(--white); }
+.sales-section { padding: 3.7rem 0; background: var(--white); scroll-margin-top: 6.5rem; }
 .sales-section.alt { background: var(--muted); }
 
 .content-grid {
